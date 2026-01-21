@@ -13,10 +13,10 @@ const Page = () => {
 
       <ExploreBtn />
 
-      <div className="mt-20 space-y-7">
+      <div className="mt-20 space-y-7" id="events">
           <h3>Featured Events</h3>
 
-          <ol className="events">
+          <ol className="events" >
               {events.map((event) => (
                 <li key={event.title}>
                   <EventCard {...event} />
